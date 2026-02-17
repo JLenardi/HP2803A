@@ -3,6 +3,9 @@
 # AVR build script for layered project
 #==================================================
 
+# Run from repository root:
+#   ./scripts/build_avr.sh
+
 set -euo pipefail
 
 # MCU and CPU frequency

@@ -1,16 +1,28 @@
+# Build directories
 /build/
-/docs/
-/obselete/
 /tmp/
 
-# Common build artifacts (optional extra safety)
+# Generated documentation and coding manuals
+/docs/a64/
+/docs/avr/
+/docs/manuals/
+
+# Compiled artifacts
 *.o
 *.a
 *.elf
 *.hex
 *.map
 *.d
+
+# Executables
+prog
+
+# Backup/editor files
 *~
 *.swp
 *.swo
 .DS_Store
+
+# Mistaken HP2803A/HP2803A-docs folder
+/HP2803A-docs/

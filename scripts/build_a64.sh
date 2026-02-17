@@ -3,6 +3,9 @@
 # A64 build script for layered project
 #==================================================
 
+# Run from repository root:
+#   ./scripts/build_a64.sh
+
 set -euo pipefail
 
 # Compiler flags

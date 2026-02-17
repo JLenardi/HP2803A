@@ -1,6 +1,6 @@
 # HP2803A
 
-A two-channel instrument that uses quartz crystal resonators with a linear frequency-temperature characteristic to measure temperature to a maximum resolution of 0.0001 °C at 10 second intervals.
+A two-channel instrument that uses quartz crystal resonators with a linear frequency-temperature characteristic to measure temperature to a maximum resolution of 0.0001°C at 10 second intervals.
 
 ## Architecture
 
