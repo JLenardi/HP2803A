@@ -1,5 +1,5 @@
 /**
- * @file probe_db.c
+ * @file cor_probe_db.c
  * @brief
  */
 #include <stdint.h>

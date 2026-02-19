@@ -1,5 +1,5 @@
 /**
- * @file menu_nav.c
+ * @file cor_menu_nav.c
  * @brief
  */
 

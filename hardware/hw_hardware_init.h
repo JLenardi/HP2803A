@@ -1,5 +1,5 @@
 /**
- * @file hardware_init.h
+ * @file hw_hardware_init.h
  * @brief
  */
 

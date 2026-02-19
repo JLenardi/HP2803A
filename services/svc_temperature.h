@@ -1,5 +1,5 @@
 /**
- * @file svc_temp.h
+ * @file svc_temperature.h
  * @brief
  */
 

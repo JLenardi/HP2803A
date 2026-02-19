@@ -1,5 +1,5 @@
 /**
- * @file hw_settings_types.h
+ * @file sys_settings_types.h
  * @brief Defines type aliases and data structures for system settings.
  */
 

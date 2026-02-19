@@ -1,5 +1,5 @@
 /**
- * @file render_views.c
+ * @file cor_render_views.c
  * @brief
  */
 

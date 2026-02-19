@@ -1,5 +1,5 @@
 /**
- * @file temp_oompute.c
+ * @file cor_temp_compute.c
  * @brief
  */
 

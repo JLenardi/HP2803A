@@ -1,5 +1,5 @@
 /**
- * @file app_init.h
+ * @file
  * @brief
  */
 

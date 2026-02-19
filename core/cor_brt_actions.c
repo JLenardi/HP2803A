@@ -1,5 +1,5 @@
 /**
- * @file brt_actions.c
+ * @file cor_brt_actions.c
  * @brief
  */
 

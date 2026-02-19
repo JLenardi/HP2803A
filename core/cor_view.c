@@ -1,5 +1,5 @@
 /**
- * @file view.c
+ * @file cor_view.c
  * @brief Logical text view management.
  */
 

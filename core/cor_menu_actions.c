@@ -1,5 +1,5 @@
 /**
- * @file menu_actions.c
+ * @file cor_menu_actions.c
  * @brief
  */
 
