@@ -8,5 +8,5 @@ The firmware is written in C and targets an AVR ATmega644A microcontroller with 
 
 ## Documentation
 
-Doxygen documentation is available at https://jlenardi.github.io/HP2803A-docs/.
+Doxygen documentation is available at https://jlenardi.github.io/HP2803A/
 
