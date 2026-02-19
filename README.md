@@ -4,6 +4,10 @@ A two-channel instrument that uses quartz crystal resonators with a linear frequ
 
 ![HP2803A instrument](docs/images/hp2803a_02.jpg)
 *Instrument (left) connected to Atmel STK500 development board (right).*
+<!--
+To reduce README image size on Raspberry Pi:
+    ffmpeg -i instrument.jpg -vf scale=1200:-1 -q:v 4 instrument_small.jpg
+-->
 
 ## Operation
 
