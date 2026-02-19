@@ -40,10 +40,10 @@ jobs:
           cat > public/index.html <<'EOF'
           <!doctype html><meta charset="utf-8">
           <title>HP2803A Docs</title>
-          <h1>HP2803A Documentation</h1>
+          <h1>Source code documentation (target and native builds)</h1>
           <ul>
-            <li><a href="./avr/">AVR docs</a></li>
-            <li><a href="./a64/">A64 docs</a></li>
+            <li><a href="./avr/">Instrument build (AVR / avr-gcc)</a></li>
+            <li><a href="./a64/">Native development build (AArch64 / gcc)</a></li>
           </ul>
           EOF
 
