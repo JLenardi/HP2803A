@@ -34,5 +34,3 @@ The firmware is written in C and targets an AVR ATmega644A microcontroller with 
 
 Doxygen documentation is available at https://jalenard.github.io/HP2803A/
 
-Workflow test
-Workflow test 2
