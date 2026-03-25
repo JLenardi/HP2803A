@@ -19,8 +19,21 @@ static uint64_t last_tick_ms = 0;
 // Monotonic ms timer
 static uint64_t now_ms(void)
 {
+    /*
+     * struct timespec (from <time.h>):
+     *
+     *   struct timespec {
+     *       time_t tv_sec;   // whole seconds
+     *       long   tv_nsec;  // nanoseconds (0 to 999,999,999)
+     *   };
+     */
     struct timespec ts;
-    clock_gettime(CLOCK_MONOTONIC, &ts);
+
+    // Call and check clock_gettime(...) = 0 (success) or -1 (failure)
+    if (clock_gettime(CLOCK_MONOTONIC, &ts) != 0)
+    {
+        return 0;
+    }
 
     uint64_t tv_ms = (uint64_t)ts.tv_sec * 1000ULL + (uint64_t)ts.tv_nsec / 1000000ULL;
 
@@ -34,24 +47,6 @@ bool timer_expired(void)
     if (now - last_tick_ms >= period_ms)
     {
         last_tick_ms = now;
-
-#if 0
-        /* System wall-clock time */
-        struct timespec ts;
-        clock_gettime(CLOCK_REALTIME, &ts);
-
-        struct tm tm;
-        localtime_r(&ts.tv_sec, &tm);
-
-        printf("timer_expired(): System time %04d-%02d-%02d %02d:%02d:%02d\n",
-               tm.tm_year + 1900,
-               tm.tm_mon + 1,
-               tm.tm_mday,
-               tm.tm_hour,
-               tm.tm_min,
-               tm.tm_sec);
-        fflush(stdout);
-#endif
 
         return true;
     }
