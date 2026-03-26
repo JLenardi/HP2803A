@@ -17,7 +17,7 @@ static uint32_t period_ms = 0;
 static uint64_t last_tick_ms = 0;
 
 // Monotonic ms timer
-static uint64_t now_ms(void)
+uint64_t timer_now_ms(void)
 {
     /*
      * struct timespec (from <time.h>):
@@ -35,6 +35,7 @@ static uint64_t now_ms(void)
         return 0;
     }
 
+    // Convert tv_sec and tv_nsec to milliseconds
     uint64_t tv_ms = (uint64_t)ts.tv_sec * 1000ULL + (uint64_t)ts.tv_nsec / 1000000ULL;
 
     return tv_ms;
@@ -42,7 +43,7 @@ static uint64_t now_ms(void)
 
 bool timer_expired(void)
 {
-    uint64_t now = now_ms();
+    uint64_t now = timer_now_ms();
 
     if (now - last_tick_ms >= period_ms)
     {
@@ -61,7 +62,7 @@ void timer_sine_wave(uint32_t * counts)
     const double period_s    = 300.0;
     const double phase_shift = pi / 8.0;
 
-    double t = (double)now_ms() / 1000.0;
+    double t = (double)timer_now_ms() / 1000.0;
     double theta = 2.0 * pi * t / period_s;
     double v1 = mean + amplitude * sin(theta);
     double v2 = mean + amplitude * sin(theta + phase_shift);
@@ -87,7 +88,7 @@ void timer_sine_wave(uint32_t * counts)
 
 void timer_restart(void)
 {
-    last_tick_ms = now_ms();
+    last_tick_ms = timer_now_ms();
 }
 
 void timer_set_timebase(TimebaseOption timebase_option)
