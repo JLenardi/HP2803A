@@ -55,7 +55,7 @@ for d in "${COMMON_DIRS[@]}"; do
 done
 
 # Output files
-OUTDIR=build
+OUTDIR=build/avr
 ELF=$OUTDIR/prog.elf
 HEX=$OUTDIR/prog.hex
 

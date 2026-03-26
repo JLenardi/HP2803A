@@ -45,7 +45,7 @@ for d in "${COMMON_DIRS[@]}"; do
 done
 
 # Output executable
-OUTDIR=build
+OUTDIR=build/a64
 OUT=$OUTDIR/prog
 
 mkdir -p "$OUTDIR"
