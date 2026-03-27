@@ -12,5 +12,5 @@
 MenuFlow menu_actions_dispatch(ActionContext* ctx);
 ActionContext menu_actions_resolve(ActionID id);
 
-#endif /* COR_MENU_ACTIONS_H */
+#endif
 

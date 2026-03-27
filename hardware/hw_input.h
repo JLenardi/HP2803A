@@ -24,5 +24,5 @@ enum HWKey_enum
 void hw_input_init(void);
 HWKey hw_input_poll_key(void);
 
-#endif /* HW_INPUT_H */
+#endif
 

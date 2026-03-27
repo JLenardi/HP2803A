@@ -17,5 +17,5 @@ void svc_display_blank(void);
 void svc_display_set_text(uint8_t row, uint8_t col, const char *str);
 void svc_display_update(void);
 
-#endif /* SVC_DISPLAY_H */
+#endif
 

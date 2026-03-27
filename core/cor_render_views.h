@@ -13,5 +13,5 @@ void render_output_view(void);
 void render_fixed_menu_view(void);
 void render_dynamic_brt_view(uint8_t brt_value);
 
-#endif /* COR_RENDER_VIEWS_H */
+#endif
 

@@ -16,5 +16,5 @@
 #define COUNT_REF_10SEC 282080000UL
 #define COUNT_MAX_10SEC 284580000UL
 
-#endif /* COR_CORE_DEFS_H */
+#endif
 

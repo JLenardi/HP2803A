@@ -8,4 +8,5 @@
 
 void hardware_init(void);
 
-#endif /* HARDWARE_INIT_H */
+#endif
+

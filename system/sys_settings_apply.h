@@ -16,5 +16,5 @@ void settings_apply_transmit(TransmitOption transmit_option);
 void sys_settings_apply(void);
 void sys_settings_handle_pending(void);
 
-#endif /* SYS_SETTINGS_APPLY_H */
+#endif
 

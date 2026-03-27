@@ -15,5 +15,5 @@ void    usart_mcal_init(void);
 void    serial_transmit(uint8_t data);
 uint8_t serial_receive(void);
 
-#endif /* USART_MCAL_H */
+#endif
 

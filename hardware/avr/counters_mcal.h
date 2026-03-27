@@ -13,4 +13,5 @@ bool counters_gate_closed(void);
 void counters_read(uint32_t * counts);
 void counters_restart(void);
 
-#endif /* COUNTERS_MCAL_H */
+#endif
+

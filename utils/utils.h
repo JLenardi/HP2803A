@@ -37,3 +37,4 @@ void     utils_int_to_text(const int32_t num, const uint8_t fieldwidth, char* tx
 void     utils_float_to_text(const float fnum, const uint8_t fieldwidth, const uint8_t res, char* txt);
 
 #endif
+

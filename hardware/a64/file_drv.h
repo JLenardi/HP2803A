@@ -19,5 +19,5 @@ void file_drv_commit(void);
 bool file_drv_read_settings(Settings * dst);
 void file_drv_write_settings(const Settings * src);
 
-#endif /* FILE_DRV_H */
+#endif
 

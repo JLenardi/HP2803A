@@ -11,5 +11,5 @@
 void set_sample_time(TimebaseOption timebase_option);
 TimebaseOption get_sample_time(void);
 
-#endif /* HW_SAMPLE_H */
+#endif
 

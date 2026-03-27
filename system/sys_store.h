@@ -20,5 +20,5 @@ void sys_store_settings_init(Settings * dst);
 void sys_store_read_settings(Settings * dst);
 void sys_store_write_settings(const Settings * src);
 
-#endif /* SYS_STORE_H */
+#endif
 

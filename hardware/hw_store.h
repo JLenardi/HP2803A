@@ -23,5 +23,5 @@ void hw_store_write_settings(const Settings * src);
 const Settings * get_saved_settings(void);
 Settings * get_saved_settings_mutable(void);
 
-#endif /* HW_STORE_H */
+#endif
 

@@ -11,5 +11,5 @@
 extern const char* const menu_text[TEXT_COUNT];
 extern const MenuNode menu[NODE_COUNT];
 
-#endif /* COR_MENU_TREE_H */
+#endif
 

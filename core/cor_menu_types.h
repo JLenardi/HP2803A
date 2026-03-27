@@ -222,5 +222,5 @@ typedef struct MenuNode
     ActionID action_id;
 } MenuNode;
 
-#endif /* COR_MENU_TYPES_H */
+#endif
 

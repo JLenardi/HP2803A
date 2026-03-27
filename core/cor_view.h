@@ -17,5 +17,5 @@ const char * view_get_row(uint8_t row);
 void view_update_row(uint8_t row);
 void view_update(void);
 
-#endif /* COR_VIEW_H */
+#endif
 

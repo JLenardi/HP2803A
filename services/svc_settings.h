@@ -17,5 +17,5 @@ const Settings * get_requested_settings(void);
 Settings * get_requested_settings_mutable(void);
 void svc_settings_handle_pending(void);
 
-#endif // SVC_SETTINGS_H
+#endif
 

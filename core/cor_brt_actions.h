@@ -15,5 +15,5 @@ MenuFlow brt_menu_actions_show(void);
 MenuFlow brt_menu_actions_set_low_nibble(void);
 MenuFlow brt_menu_actions_set_high_nibble(void);
 
-#endif /* COR_BRT_ACTIONS_H */
+#endif
 

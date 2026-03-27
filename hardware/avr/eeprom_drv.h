@@ -18,5 +18,5 @@ void eeprom_drv_commit(void);
 bool eeprom_drv_read_settings(Settings * dst);
 void eeprom_drv_write_settings(const Settings * src);
 
-#endif /* EEPROM_DRV_H */
+#endif
 

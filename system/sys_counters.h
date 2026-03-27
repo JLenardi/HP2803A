@@ -14,5 +14,5 @@ void sys_restart_counters(void);
 void read_measurement(void);
 const uint32_t * get_counts(void);
 
-#endif /* SYS_COUNTERS_H */
+#endif
 

@@ -10,5 +10,5 @@
 
 void calc_celsius_from_count(const uint32_t * counts_in, float * temps_out);
 
-#endif /* COR_TEMP_COMPUTE_H */
+#endif
 

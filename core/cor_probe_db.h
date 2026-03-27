@@ -39,5 +39,5 @@ CalibrationEntry * probe_db_get_core_entry_mutable(int probe_index);
 const CorrectionFactorEntry * probe_db_get_cf_entry(int probe_index);
 CorrectionFactorEntry * probe_db_get_cf_entry_mutable(int probe_index);
 
-#endif /* COR_PROBE_DB_H */
+#endif
 

@@ -75,5 +75,5 @@ typedef struct
     uint8_t      selected_value;
 } ActionContext;
 
-#endif /* COR_CORE_TYPES_H */
+#endif
 

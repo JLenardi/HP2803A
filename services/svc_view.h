@@ -12,5 +12,5 @@ typedef enum
 void svc_view_request_update(DisplayMode display_mode);
 void svc_view_update_if_needed(void);
 
-#endif // SVC_VIEW_H
+#endif
 

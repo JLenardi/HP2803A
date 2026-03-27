@@ -91,5 +91,5 @@ typedef struct
     TransmitOption   transmit_option;
 } Settings;
 
-#endif // SYS_SETTINGS_TYPES_H
+#endif
 

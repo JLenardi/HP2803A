@@ -32,5 +32,5 @@ void start_timer1(void);
 void stop_timer0(void);
 void stop_timer1(void);
 
-#endif /* TIMER_MCAL_H */
+#endif
 

@@ -14,5 +14,5 @@ const uint32_t * cor_get_counts(void);
 const Settings * cor_get_current_settings(void);
 char * cor_get_output_buf_mutable(void);
 
-#endif // COR_DATA_PROVIDER_H
+#endif
 

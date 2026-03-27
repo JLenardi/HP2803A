@@ -16,4 +16,5 @@ void input_mcal_enable(void);
 HWKey input_mcal_poll_key(void);
 void cycle_button_input_line(void);
 
-#endif /* INPUT_MCAL_H */
+#endif
+

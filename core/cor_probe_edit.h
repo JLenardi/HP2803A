@@ -25,5 +25,5 @@ MenuFlow probe_set_cf_param(void);
 MenuFlow probe_set_cf_value(void);
 
 
-#endif /* COR_PROBE_EDIT_H */
+#endif
 

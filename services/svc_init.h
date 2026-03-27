@@ -8,5 +8,5 @@
 
 void services_init(void);
 
-#endif /* SVC_INIT_H */
+#endif
 

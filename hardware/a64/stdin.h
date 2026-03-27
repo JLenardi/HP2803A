@@ -11,5 +11,5 @@
 void stdin_init(void);
 HWKey stdin_poll_key(void);
 
-#endif /* STDIN_H */
+#endif
 

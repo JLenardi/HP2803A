@@ -13,5 +13,5 @@ void menu_nav_init(void);
 const MenuNode* menu_nav_get_node(NodeID node_id);
 void menu_nav_step(UIKey key);
 
-#endif /* COR_MENU_NAV_H */
+#endif
 

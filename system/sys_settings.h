@@ -31,5 +31,5 @@ void sys_settings_clear_pending(void);
 BrightnessValue sys_settings_get_brightness(void);
 void sys_settings_set_brightness(BrightnessValue value);
 
-#endif /* SYS_SETTINGS_H */
+#endif
 

@@ -13,5 +13,5 @@ void gpio_mcal_init(void);
 void gpio_set_timebase(TimebaseOption timebase);
 TimebaseOption gpio_get_timebase(void);
 
-#endif // GPIO_MCAL_H
+#endif
 

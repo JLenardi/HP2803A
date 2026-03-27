@@ -31,5 +31,5 @@ void hw_read_counters(uint32_t count_out[2]);
  */
 void hw_restart_counters(void);
 
-#endif /* HW_COUNTERS_H */
+#endif
 

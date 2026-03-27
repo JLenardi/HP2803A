@@ -12,5 +12,5 @@
 
 void hw_output_transmit(uint8_t byte);
 
-#endif /* HW_OUTPUT_H */
+#endif
 

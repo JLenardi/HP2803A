@@ -9,5 +9,5 @@
 void cpu_interrupts_enable(void);
 void cpu_interrupts_disable(void);
 
-#endif /* CPU_INTERRUPT_H */
+#endif
 

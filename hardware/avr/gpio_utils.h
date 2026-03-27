@@ -20,5 +20,5 @@ void gpio_write_masked(uint8_t mask, uint8_t value, GpioPort port);
 void toggle_START(void);
 void toggle_WRITE(void);
 
-#endif // GPIO_UTILS_H
+#endif
 

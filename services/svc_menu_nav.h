@@ -8,5 +8,5 @@
 
 void svc_menu_step(UIKey key);
 
-#endif // SVC_MENU_NAV_H
+#endif
 

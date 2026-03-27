@@ -11,5 +11,5 @@
 void update_temp(void);
 const float * get_temps(void);
 
-#endif /* SVC_TEMPERATURE_H */
+#endif
 
