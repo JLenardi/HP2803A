@@ -2,7 +2,7 @@
 
 gcc -std=c99 -Wall -Wextra -Wconversion -Werror -pedantic \
     -I app -I services -I system -I hardware -I hardware/a64 -I core -I utils \
-    hardware/a64/timer.c \
-    tests/hardware/a64/test_timer.c \
-    -o build/tests/hardware/a64/test_timer \
+    hardware/a64/stdout.c \
+    tests/hardware/a64/test_stdout.c \
+    -o build/tests/hardware/a64/test_stdout \
     -lm
