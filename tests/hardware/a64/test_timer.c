@@ -1,57 +1,38 @@
-/**
- * @file test_timer.c
- */
-
-#define _POSIX_C_SOURCE 200809L
-
+#include <inttypes.h>
 #include <stdint.h>
 #include <stdio.h>
-#include <time.h>
 #include "timer.h"
-
-static void sleep_ms(long ms)
-{
-    struct timespec req =
-    {
-        .tv_sec = ms / 1000,
-        .tv_nsec = (ms % 1000) * 1000000L
-    };
-    nanosleep(&req, NULL);
-}
 
 int main(void)
 {
-    uint64_t prev = timer_now_ms();
+    uint32_t counts[2] = {0, 0};
+    uint64_t start_ms  = 0;
+    uint64_t now_ms    = 0;
+    uint64_t elapsed_s = 0;
+    unsigned cycles    = 0;
 
-    for (int i = 0; i < 10; i++)
+    timer_set_timebase(TIMEBASE_1SEC);
+    timer_restart();
+
+    start_ms = timer_now_ms();
+
+    printf("t    counts[0] counts[1]\n");
+
+    while (cycles <= 300)
     {
-        sleep_ms(1000);
-
-       uint64_t cur = timer_now_ms();
-
-        if (cur <= prev)
+        if (timer_expired())
         {
-            printf("FAIL: Not monotonic at step %d (prev =%llu, cur=%llu)\n",
-                 i,
-               (unsigned long long)prev,
-                (unsigned long long)cur);
-            return 1;
+            timer_sine_wave(counts);
+
+            now_ms = timer_now_ms();
+            elapsed_s = (now_ms - start_ms) / 1000;
+
+            printf("%03" PRIu64 "  %" PRIu32 "  %" PRIu32 "\n",
+                   elapsed_s, counts[0], counts[1]);
+
+            ++cycles;
         }
-
-        uint64_t delta = cur - prev;
-        printf("step %d: delta = %llu ms\n",
-                i,
-                (unsigned long long)delta);
-
-        if (delta < 900 || delta > 1100)
-        {
-            printf("WARNING: delta out of expected range\n");
-        }
-
-        prev = cur;
     }
 
-    printf("PASS: monotonic over 10 samples\n");
     return 0;
 }
-
