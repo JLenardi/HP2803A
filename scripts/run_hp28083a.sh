@@ -1,7 +1,8 @@
 #!/bin/bash
 
 stty -icanon -echo min 0 time 0
-./build/prog
 
-#stty sane
+trap 'stty sane' EXIT
+
+./build/a64/hp2803a
 

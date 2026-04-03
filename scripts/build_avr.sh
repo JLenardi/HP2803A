@@ -56,8 +56,8 @@ done
 
 # Output files
 OUTDIR=build/avr
-ELF=$OUTDIR/prog.elf
-HEX=$OUTDIR/prog.hex
+ELF=$OUTDIR/hp2803a.elf
+HEX=$OUTDIR/hp2803a.hex
 
 mkdir -p "$OUTDIR"
 

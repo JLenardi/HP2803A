@@ -24,7 +24,7 @@ void stdin_init(void)
      *
      * Before running program:
      * stty -icanon -echo min 0 time 0
-     * ./build/prog
+     * ./build/a64/hp2803a
      *
      * After running program:
      * stty sane

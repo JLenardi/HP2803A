@@ -46,7 +46,7 @@ done
 
 # Output executable
 OUTDIR=build/a64
-OUT=$OUTDIR/prog
+OUT=$OUTDIR/hp2803a
 
 mkdir -p "$OUTDIR"
 
