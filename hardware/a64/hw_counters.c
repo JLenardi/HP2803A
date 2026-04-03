@@ -1,6 +1,14 @@
 /**
  * @file hardware/a64/hw_counters.c
- * @brief
+ * @brief Hardware counter interface for A64 platform.
+ *
+ * This module provides hw_* wrapper functions around the timer_* API
+ * implemented in the A64 layer.
+ *
+ * Mapping:
+ *   hw_counters_ready()   -> timer_expired()
+ *   hw_read_counters()    -> timer_sine_wave()
+ *   hw_restart_counters() -> timer_restart()
  */
 
 #include <stdbool.h>
